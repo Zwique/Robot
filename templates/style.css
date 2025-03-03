@@ -1,0 +1,50 @@
+/* General Styles */
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    animation: glitch 1.5s infinite alternate;
+}
+
+/* Main Section */
+main {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 40px;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-top: 1px solid #c9d1d9;
+}
+
+footer a {
+    color: #00ff00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+    0% { text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00; }
+    50% { text-shadow: 2px -2px 5px #ff00ff, -2px 2px 5px #00ffff; }
+    100% { text-shadow: -2px 2px 5px #ff00ff, 2px -2px 5px #00ffff; }
+}
