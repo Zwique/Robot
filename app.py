@@ -11,9 +11,9 @@ def index():
 @app.route('/robots.txt')
 def robots():
     return """
-    User-agent: *
-    Allow: /secret
-    Disallow: /flag.txt
+    User-agent: * \n
+    Allow: /secret \n
+    Disallow: /flag.txt \n
     """
 
 # Route for flag.txt
